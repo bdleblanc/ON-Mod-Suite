@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ON Mod Suite
 // @namespace    http://www.hanalani.org/
-// @version      2.16.0
+// @version      2.16.1
 // @description  Collection of mods for Blackbaud ON system
 // @author       Scott Yoshimura
 // @match        https://hanalani.myschoolapp.com/*
@@ -20,7 +20,7 @@
 // @connect      script.googleusercontent.com
 // ==/UserScript==
 
-/* Copyright (C) 2018-2022  Hanalani Schools
+/* Copyright (C) 2023 Thales Academy, based on code (C) 2018-2023  Hanalani Schools
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -846,6 +846,7 @@ function PeopleFinderQuickSelect(jNode)
 {
     console.log("Function: " + arguments.callee.name)
     $(".people-finder-userlist-link").remove()
+    /*
     $(".people-finder-search-box, input[placeholder='Type a name, ID or email']").keypress(function (e){
         switch (e.keyCode)
         {
@@ -887,6 +888,7 @@ function PeopleFinderQuickSelect(jNode)
                 $(".result").eq(8).click();
                 break;
         }
+        */
 
     })
 
@@ -1390,10 +1392,10 @@ function GetGradeLevel(str)
                 return " (1st)";
                 break;
             case 12:
-                return " (K5)";
+                return " (K)";
                 break;
             case 13:
-                return " (K4)";
+                return " (PK)";
                 break;
             case 14:
                 return " (K3)";
