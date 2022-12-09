@@ -4,7 +4,7 @@
 // @version      2.16.1
 // @description  Collection of mods for Blackbaud ON system
 // @author       Scott Yoshimura
-// @match        https://hanalani.myschoolapp.com/*
+// @match        https://*.myschoolapp.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_setClipboard
